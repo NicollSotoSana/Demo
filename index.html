@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PruebaaPortafolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <script src='main.js'></script>
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nico</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href ="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href ="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href ="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href ="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href ="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href ="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Nico.jpg" alt="">
+            </div>
+            <h1>Nicoll Soto Sana</h1>
+            <h2>Estudiante de Ingeniería de Sistemas</h2>
+            <div class="redes">
+                <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/51978626875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/NicollSotoSana" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nicoll-soto-sana/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+	<!-- Seccion Sobre Mi-->
+	<section id="sobremi" class="sobremi">
+		<div class="contenido-seccion">
+			<h2>Sobre Mí</h2>
+			<p><span>Hola, soy Nicoll Soto.</span> Soy una persona con sólidas habilidades de liderazgo, toma dedecisiones y buenas relaciones interpersonales. Mi persistencia se evidencia en la consecución de resultados deseados. Mi objetivo es un puesto exigente y efervescente donde pueda compartir mis conocimientos y al mismo tiempo adquirir nuevas experiencias para enriquecer mi bagaje profesional. </p>
+			
+			<div class="fila">
+				<!--Datos Personales-->
+				<div class="col">
+					<h3>Datos Personales</h3>
+					<ul>
+						<li>
+							<strong>Cumpleaños</strong>
+							09-Junio
+						</li>
+						<li>
+							<strong>Email</strong>
+							nicoll.soto.sana@gmail.com
+						</li>
+						<li>
+							<strong>Dirección</strong>
+							Arequipa - Perú
+						</li>
+						<li>
+							<strong>Cargo</strong>
+							<span>FREELANCE</span>
+						</li>
+					</ul>
+
+				</div>
+
+				<!--intereses-->
+				<div class="col">
+					<h3>Intereses</h3>
+					<div class="contenedor-intereses">
+						<div class="interes">
+							<i class="fa-solid fa-code"></i>
+							<span>PROGRAMAR</span>
+						</div>
+						<div class="interes">
+							<i class="fa-brands fa-researchgate"></i>
+							<span>INVESTIGAR</span>
+						</div>
+						<div class="interes">
+							<i class="fa-solid fa-language"></i>
+							<span>IDIOMAS</span>
+						</div>
+						<div class="interes">
+							<i class="fa-solid fa-gamepad"></i>
+							<span>JUEGOS</span>
+						</div>
+						<div class="interes">
+							<i class="fa-solid fa-headphones"></i>
+							<span>MUSICA</span>
+						</div>
+						<div class="interes">
+							<i class="fa-solid fa-plane"></i>
+							<span>VIAJAR</span>
+						</div>
+						<div class="interes">
+							<i class="fa-solid fa-dumbbell"></i>
+							<span>ENTRENAR</span>
+						</div>
+						<div class="interes">
+							<i class="fa-solid fa-person-swimming"></i>
+							<span>DEPORTES</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+			<!--gaa haaa
+			<button>
+				Descargar CV <i class="fa-solid fa-download"></i>
+				<span class="overlay"></span>
+			</button>
+			-->
+
+			<button id="descargarCV" class="sobremi">
+				Descargar CV 
+				<i class="fa-solid fa-download"></i>
+				<span class="overlay"></span>
+			</button>
+
+
+		</div>
+	</section>
+
+	<!-- Seccion Skills-->
+	<section class="skills" id="skills">
+		<div class="contenido-seccion">
+			<h2>Skills</h2>
+			<div class="fila">
+				<!--Habilidades tecnicas-->
+				<div class="col">
+					<h3>Habilidades Técnicas</h3>
+					<div class="skill">
+						<span>Javascript</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>HTML & CSS</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>89%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>FIGMA</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>PowerBI</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>MS. Office</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Python</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>79%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>WordPress</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>76%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>MySql</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>56%</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--Habilidades Profesionales-->
+				<div class="col">
+					<h3>Habilidades Blandas</h3>
+					<div class="skill">
+						<span>Comunicación</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>87%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Trabajo en equipo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Creatividad</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>93%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Dedicación</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Gestión de conflictos</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Manejo del estrés</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>79%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Liderazgo</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>76%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill">
+						<span>Adaptabilidad</span>
+						<div class="barra-skill">
+							<div class="progreso">
+								<span>87%</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Seccion Curriculum-->
+	<section id="curriculum" class="curriculum">
+		<div class="contenido-seccion">
+			<h2>Curriculum</h2>
+			<div class="fila">
+				<div class="col izquierda">
+					<h3>Educación</h3>
+
+					<div class="item izq">
+						<h4>Ingeniería de Sistemas</h4>
+						<span class="casa">Universidad Católica de Santa María</span>
+						<span class="fecha">2020 - 2024</span>
+						<p>Décimo Superior</p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+
+					<div class="item izq">
+						<h4>Colegio</h4>
+						<span class="casa">I.E. Nuestra Señora de Fátima</span>
+						<span class="fecha">2010 - 2019</span>
+						<p>Concluido</p>
+						<div class="conectori">
+							<div class="circuloi"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col derecha">
+					<h3>Experiencia Laboral</h3>
+
+					<div class="item der">
+						<h4>Investigadora Académica</h4>
+						<span class="casa">Universidad Católica de Santa María</span>
+						<span class="fecha">Mar 2023 - Oct 2023</span>
+						<p>Desarrollo de una Aplicación Móvil Para la Enseñanza de Braille a Personas con Discapacidad Visual.</p>
+						<p> - Diseño de UX/UI de la aplicación en Figma</p>
+						<p> - Asistencia en desarrollo de modelo Machine Learning</p>
+						<p> - Publicación de un Artículo Científico</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+
+					<div class="item der">
+						<h4>Voluntaria en Investigación</h4>
+						<span class="casa">Universidad Católica de Santa María</span>
+						<span class="fecha">Sep 2023 - Oct 2023</span>
+						<p>Implementación de un Aplicativo Móvil utilizando Técnicas Inteligentes para el seguimiento de la Salud Mental en el Departamento de Arequipa.</p>
+						<p> - Diseño del aplicativo en Figma</p>
+						<p> - Desarrollo del aplicativo en Android Studio</p>
+						<p> - Ganador del Ideatón William Morris - Área de Investigación</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+
+					<div class="item der">
+						<h4>Desarrollador Junior</h4>
+						<span class="casa">UCSM - Gestión de Datos de la Información</span>
+						<span class="fecha">Ago 2022 - Dic 2022</span>
+						<p>Desarrollo de la Base de Datos para la Emisión de Boletas y Facturas de la Empresa AngellyPeru S.A.C.</p>
+						<p> - Desarrollo del flujo para emisión de boletas y facturas.</p>
+						<p> - Identificación de entidades y datos clave</p>
+						<p> - Aplicación de algoritmo de mapeo y normalización</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+
+					<div class="item der">
+						<h4>Técnico de Hardware</h4>
+						<span class="casa">PC Planet JF</span>
+						<span class="fecha">Ene 2021 - Dic 2022</span>
+						<p>Soporte de TI.</p>
+						<p> - Ensamblaje de computadoras</p>
+						<p> - Mantenimiento y reparación del hardware</p>
+						<p> - Instalación de sistemas operativos y programas</p>
+						<div class="conectord">
+							<div class="circulod"></div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Seccion Portafolio -->
+	<section id="portfolio" class="portfolio">
+		<div class="contenido-seccion">
+			<h2>PORTAFOLIO</h2>
+			<div class="galeria">
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+				<div class="proyecto">
+					<img src="img/p1.jpg" alt="">
+					<div class="overlay">
+						<h3>Diseño Creativo</h3>
+						<p>Fotografia</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!--Seccion Contacto-->
+	<section id="contacto" class="contacto">
+		<div class="contenido-seccion">
+			<h2>CONTACTO</h2>
+			<div class="fila">
+				<!--Formulario-->
+				<div class="col">
+					<input type="text" placeholder="Tu Nombre">
+					<input type="text" placeholder="Número telefónico">
+					<input type="text" placeholder="Correo">
+					<input type="text" placeholder="Tema">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+					<button>
+						Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+						<span class="overlay"></span>
+					</button>
+				</div>
+				<!--Mapa-->
+				<div class="col">
+					<img src="img/mapa.png" alt="">
+					<div class="info">
+						<ul>
+							<li>
+								<i class="fa-solid fa-location-dot"></i>
+								Arequipa, Perú
+							</li>
+							<li>
+								<i class="fa-solid fa-mobile-screen"></i>
+								Tel: 978 626 875
+							</li>	
+							<li>
+								<i class="fa-solid fa-envelope"></i>
+								Email: nicoll.soto.sana@gmail.com
+							</li>			
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Seccion FOOTER-->
+	<footer>
+		<a href="#inicio" class="arriba">
+			<i class="fa-solid fa-angles-up"></i>
+		</a>
+		<div class="redes">
+			<a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+			<a href="https://wa.me/51978626875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+			<a href="https://github.com/NicollSotoSana" target="_blank"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/nicoll-soto-sana/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
